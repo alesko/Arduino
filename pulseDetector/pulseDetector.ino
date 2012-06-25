@@ -31,8 +31,9 @@ void loop()
 
 ISR(ANALOG_COMP_vect)
 {
+  
   digitalWrite(outPin, HIGH);
-  delay(1);
+  //delay(1);
   digitalWrite(outPin, LOW);
   
   Serial.println("5");
